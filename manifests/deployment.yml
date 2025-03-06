@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: dlrpicontainerizedspike 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dlrpicontainerizedspike
+  template:
+    metadata:
+      labels:
+        app: dlrpicontainerizedspike 
+    spec:
+      containers:
+        - name: dlrpicontainerizedspike 
+          image: inxnacrtestdo1532hy.azurecr.io/dlrpicontainerizedspike
+          ports:
+          - containerPort: 8080
