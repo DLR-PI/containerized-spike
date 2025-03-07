@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: argocdcontainerizedspike 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argocdcontainerizedspike
+  template:
+    metadata:
+      labels:
+        app: argocdcontainerizedspike 
+    spec:
+      containers:
+        - name: argocdcontainerizedspike 
+          image: inxnacrtestdo1532hy.azurecr.io/dlrpicontainerizedspike
+          ports:
+          - containerPort: 8080
