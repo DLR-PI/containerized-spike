@@ -14,6 +14,8 @@ spec:
     spec:
       containers:
         - name: argocdcontainerizedspike 
-          image: inxnacrtestdo1532hy.azurecr.io/dlrpicontainerizedspike
+          image: inxnacrtestdo1532hy.azurecr.io/dlrpicontainerizedspike:310657
           ports:
           - containerPort: 8080
+      imagePullSecrets:
+        - name: acr-secret
