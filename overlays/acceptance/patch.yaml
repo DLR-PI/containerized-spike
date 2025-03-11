@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocdcontainerizedspike
+  name: argocdcontainerizedspikeaccept
 spec:
   replicas: 1  # Acceptance-specific configuration
