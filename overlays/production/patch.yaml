@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argocdcontainerizedspike
+  labels:
+    app: argocdcontainerizedspikeprod
 spec:
-  containers:
-        - name: argocdcontainerizedspikeprod
   replicas: 2  # Production-specific configuration
