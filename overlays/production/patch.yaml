@@ -3,4 +3,6 @@ kind: Deployment
 metadata:
   name: argocdcontainerizedspike
 spec:
+  containers:
+        - name: argocdcontainerizedspikeprod
   replicas: 2  # Production-specific configuration
